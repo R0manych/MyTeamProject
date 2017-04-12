@@ -12,9 +12,7 @@ namespace Web.Tests.Controllers
         public void IndexViewEqualIndexCshtml()
         {
             MyController controller = new MyController();
-
             ViewResult result = controller.Index() as ViewResult;
-
             Assert.AreEqual("Index", result.ViewName);
         }
 
@@ -22,9 +20,7 @@ namespace Web.Tests.Controllers
         public void IndexStringInViewbag()
         {
             MyController controller = new MyController();
-
             ViewResult result = controller.Index() as ViewResult;
-
             Assert.AreEqual("My controller method", result.ViewBag.Message);
         }
     }

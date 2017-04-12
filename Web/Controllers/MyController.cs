@@ -8,7 +8,6 @@ namespace Web.Controllers
 {
     public class MyController : Controller
     {
-        // GET: My
         public ActionResult Index()
         {
             ViewBag.Message = "My controller method";
